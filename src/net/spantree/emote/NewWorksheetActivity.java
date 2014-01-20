@@ -2,14 +2,11 @@ package net.spantree.emote;
 
 import android.app.Activity;
 import android.os.Bundle;
-<<<<<<< HEAD
 import net.spantree.emote.util.FragmentUtil;
-=======
+
 import android.view.View;
->>>>>>> Basic button setup for worksheet activity
 import android.widget.TextView;
 import net.spantree.emote.domain.Emotion;
-import net.spantree.emote.util.FragmentUtil;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
