@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 
-public class MyActivity extends Activity {
+public class HomeActivity extends Activity {
     /**
      * Called when the activity is first created.
      */
