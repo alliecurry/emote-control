@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">emote-control</string>
+    <string name="journal_prompt">Describe what caused these emotions</string>
 
 </resources>
