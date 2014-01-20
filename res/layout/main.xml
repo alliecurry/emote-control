@@ -20,14 +20,14 @@
     <Button
             style="@style/BigButton"
             android:text="New"
-            android:id="@+id/button1"
+            android:id="@+id/button_new_worksheet"
             android:layout_marginBottom="20dp"
             />
 
     <Button
             style="@style/BigButton"
             android:text="Old"
-            android:id="@+id/button2"
+            android:id="@+id/button_old_worksheets"
             android:layout_marginBottom="10dp"
             />
     <TextView
