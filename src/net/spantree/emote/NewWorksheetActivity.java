@@ -8,6 +8,7 @@ import net.spantree.emote.util.FragmentUtil;
 import android.view.View;
 >>>>>>> Basic button setup for worksheet activity
 import android.widget.TextView;
+import net.spantree.emote.domain.Emotion;
 import net.spantree.emote.util.FragmentUtil;
 
 import java.text.DateFormat;
@@ -23,11 +24,14 @@ public class NewWorksheetActivity extends Activity implements View.OnClickListen
     private View buttonDone;
     private View buttonNext;
 
+    private Emotion emotion;
+
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.newemote);
         FragmentUtil.replaceFragment(this, new QuestionListFragment(), R.id.fragment);
         setupViews();
+
     }
 
     private void setupViews() {
@@ -65,6 +69,10 @@ public class NewWorksheetActivity extends Activity implements View.OnClickListen
         }
     }
 
+    private void startNextFragment() {
+        
+    }
+
     /** Called when the hardware back button is pressed. */
     @Override
     public void onBackPressed() {
@@ -75,5 +83,9 @@ public class NewWorksheetActivity extends Activity implements View.OnClickListen
             // closing Activity for now...
             finish();
         }
+    }
+
+    public void setEmotion(Emotion emotion) {
+        this.emotion = emotion;
     }
 }
