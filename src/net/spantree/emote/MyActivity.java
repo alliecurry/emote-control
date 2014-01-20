@@ -2,6 +2,7 @@ package net.spantree.emote;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.View;
 
 public class MyActivity extends Activity {
     /**
@@ -11,5 +12,6 @@ public class MyActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
+        View mtTextView = findViewById(R.id.myText1);
     }
 }
