@@ -10,27 +10,31 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
 public class QuestionListFragment extends Fragment {
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.list_question, container, false);
-        final ListView listView = (ListView) getView().findViewById(R.id.questionList);
+        final ListView listView = (ListView) view.findViewById(R.id.questionList);
+        setText("Question", view);
         List<String> options = Arrays.asList("Option1", "Option2", "Option3");
         final StableArrayAdapter adapter = new StableArrayAdapter(getActivity(),
-                android.R.layout.simple_list_item_1, options);
+                R.layout.option, options);
         listView.setAdapter(adapter);
+
 
         return view;
 
     }
 
-    public void setText(String item) {
-        TextView textView = (TextView) getView().findViewById(R.id.questionPrompt);
+    public void setText(String item, View view) {
+        TextView textView = (TextView) view.findViewById(R.id.questionPrompt);
         textView.setText(item);
     }
 
