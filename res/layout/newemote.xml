@@ -7,17 +7,16 @@
                 android:background="@android:color/white">
 
     <TextView
-        android:id="@+id/date"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="Here is where the date goes"
-        android:textSize="30sp"
-        android:gravity="center"
-        android:textColor="#000000"
-        android:padding="4dp"
-        android:layout_marginBottom="20dp"
-
-        />
+            android:id="@+id/worksheet_date"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Here is where the date goes"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:padding="4dp"
+            android:layout_marginBottom="20dp"
+    />
 
     <!--INSERT FRAGMENT HERE-->
     <fragment
@@ -32,11 +31,11 @@
         android:layout_alignRight="@+id/exit_button"/>
 
     <Button
-        style="@style/LittleButton"
-        android:text="OK"
-        android:id="@+id/ok_button"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"/>
+            style="@style/LittleButton"
+            android:text="Back"
+            android:id="@+id/back_button"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"/>
 
     <Button
         style="@style/LittleButton"
@@ -46,11 +45,11 @@
         android:layout_centerHorizontal="true"/>
 
     <Button
-        style="@style/LittleButton"
-        android:text="Exi†"
-        android:id="@+id/exit_button"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"/>
+            style="@style/LittleButton"
+            android:text="Next"
+            android:id="@+id/next_button"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"/>
 
 
 </RelativeLayout>
