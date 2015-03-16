@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@android:color/white">
+              style="@style/defaultActivityStyle"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" >
 
     <TextView
-        android:id="@+id/date"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="Here is where the date goes"
-        android:textSize="30sp"
-        android:gravity="center"
-        android:textColor="#000000"
-        android:padding="4dp"
-        android:layout_marginBottom="20dp"
-
-        />
+            android:id="@+id/worksheet_date"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Here is where the date goes"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:padding="4dp"
+            android:layout_marginBottom="20dp"
+    />
 
     <!--INSERT FRAGMENT HERE-->
     <fragment
@@ -26,31 +25,32 @@
         android:name="net.spantree.emote.QuestionListFragment"
         android:id="@+id/fragment"
         android:layout_gravity="right|center_vertical"
-        android:layout_below="@+id/date"
+        android:layout_below="@+id/worksheet_date"
         android:layout_alignParentLeft="true"
-        android:layout_above="@+id/ok_button"
-        android:layout_alignRight="@+id/exit_button"/>
+        android:layout_above="@+id/worksheet_back_button"
+        android:layout_alignRight="@+id/worksheet_next_button"/>
 
     <Button
-        style="@style/LittleButton"
-        android:text="OK"
-        android:id="@+id/ok_button"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"/>
+            style="@style/LittleButton"
+            android:text="Back"
+            android:id="@+id/worksheet_back_button"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"/>
 
     <Button
-        style="@style/LittleButton"
-        android:text="Done"
-        android:id="@+id/done_button"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"/>
-
+            style="@style/LittleButton"
+            android:text="Done"
+            android:id="@+id/worksheet_done_button"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone" />
+            
     <Button
-        style="@style/LittleButton"
-        android:text="Exi†"
-        android:id="@+id/exit_button"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"/>
+            style="@style/LittleButton"
+            android:text="Next"
+            android:id="@+id/worksheet_next_button"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true" />
 
 
 </RelativeLayout>

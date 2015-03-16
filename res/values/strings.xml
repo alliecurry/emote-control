@@ -3,4 +3,37 @@
     <string name="app_name">emote-control</string>
     <string name="journal_prompt">Describe what caused these emotions</string>
 
+    <string name="default_date_format">MM/dd/yyyy</string>
+
+    <string name="question1_prompt">Today I am feeling...</string>
+    <string name="question2_prompt">What happened?</string>
+    <string name="question3_prompt">Why does it make you feel this way?</string>
+    <string name="question4_prompt">Talk it out.</string>
+
+    <string name="question3_choice1">It is something that SHOULD NOT happen.</string>
+    <string name="question3_choice2">Something NEEDED to happen, but didn\'t.</string>
+    <string name="question3_choice3">I just CAN\'T stand what happened.</string>
+    <string name="question3_choice4">Other...</string>
+
+    <string name="question4_choice1">However, my belief isn\'t completely true. One example where I could be wrong is...</string>
+    <string name="question4_choice2">But compared to other situations, this isn\'t so bad because...</string>
+    <string name="question4_choice3">But I can definitely handle it if I...</string>
+    <string name="question4_choice4">I feel better when I remind myself that...</string>
+
+    <!-- Used to populate ListView for Question 3 -->
+    <string-array name="question3_choices_list">
+        <item>@string/question3_choice1</item>
+        <item>@string/question3_choice2</item>
+        <item>@string/question3_choice3</item>
+        <item>@string/question3_choice4</item>
+    </string-array>
+
+    <!-- Used to populate ListView for Question 4 -->
+    <string-array name="question4_choices_list">
+        <item>@string/question4_choice1</item>
+        <item>@string/question4_choice2</item>
+        <item>@string/question4_choice3</item>
+        <item>@string/question4_choice4</item>
+    </string-array>
+
 </resources>
